@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,40 +8,148 @@
   <meta name="description" content="Academic website of Salvatore Gatto">
   <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
+  <nav class="main-nav" aria-label="Primary">
+    <a href="#main">Home</a>
+    <a href="#about">About</a>
+    <a href="#research-interests">Research Interests</a>
+    <a href="#publications">Publications</a>
+  </nav>
 
-  <header>
-    <div class="header-content">
-      <img src="images/Salvatore-Gatto-1.jpg" alt="Salvatore Gatto, Accessibility Researcher" class="profile-image">
-      <div>
-        <h1>Salvatore Gatto</h1>
-        <p>Accessibility Researcher | PhD Candidate in Brain, Mind and Computer Science at the University of Padua</p>
-      </div>
-    </div>
-  </header>
 
-  <main id="main">
-    <h2>About</h2>
-    <p>I am an Accessibility Researcher and PhD Candidate in Brain, Mind and Computer Science at the University of Padua. My research focuses on accessibility by design, accessible web and mobile systems, and multisensory access to digital content. I work on integrating accessibility into software workflows and on tools that support accessible web content and auditing.</p>
+  <main id="main" class="page-layout">
+    <aside class="profile-sidebar" aria-labelledby="profile-name">
+      <img src="images/Salvatore-Gatto-1.jpg" alt="Portrait of Salvatore Gatto" class="profile-photo">
 
-    <h2>Research interests</h2>
-    <ul>
-      <li>Accessibility</li>
-      <li>Inclusive design</li>
-      <li>Human-computer interaction</li>
-    </ul>
+      <h1 id="profile-name">Salvatore Gatto</h1>
 
-    <div class="publications">
-      <h2>Publications</h2>
-      <ul>
-        <li><a href="https://doi.org/10.1109/ACCESS.2024.3448509">Accessible Mathematics: Representation of Functions Through Sound and Touch</a>, S. Gatto, O. Gaggi, L. Grosset and L. G. N. Fovino, in IEEE Access, vol. 12, pp. 121552-121569, 2024.</li>
-        <li><a href="https://doi.org/10.1145/3748699.3749815">Toward Fully Accessible Digital Events: Guidelines, Platform Design, and PPTX-to-HTML Conversion</a>, S. Gatto and O. Gaggi, in Proceedings of the 2025 International Conference on Information Technology for Social Good (GoodIT '25), Association for Computing Machinery, New York, NY, USA, 382–389, 2025.</li>
-        <li><a href="https://doi.org/10.1145/3748699.3749805">An Assessment of LLM-Based Auditing and Validation for Web Accessibility</a>, Barry Bassi, Giovanni Delnevo, Mirko Franco, Ombretta Gaggi, Salvatore Gatto, Silvia Mirri, and Kelvin Olaiya, in Proceedings of the 2025 International Conference on Information Technology for Social Good (GoodIT '25), Association for Computing Machinery, New York, NY, USA, 297–305, 2025.</li>
-        <li><a href="https://doi.org/10.1145/3672608.3707912">Supporting Accessibility Auditing and HTML Validation using Large Language Models</a>, Barry Bassi, Giovanni Delnevo, Mirko Franco, Ombretta Gaggi, Salvatore Gatto, Silvia Mirri, and Kelvin Olaiya, in Proceedings of the 40th ACM/SIGAPP Symposium on Applied Computing (SAC '25), Association for Computing Machinery, New York, NY, USA, 27–31, 2025.</li>
+      <p class="profile-role">
+        Accessibility Researcher<br>
+        PhD Candidate in Brain, Mind and Computer Science
+      </p>
+
+      <ul class="contact-list" aria-label="Contact information">
+        <li>📍 Padova, Italy</li>
+        <li>
+          <a href="https://www.unipd.it/">🏛 University of Padua</a>
+        </li>
+        <li>
+          ✉️ <a href="mailto:salvatore.gatto99@gmail.com">Email</a>
+        </li>
+       
+        <li>
+          <a href="https://linkedin.com/in/salvatore-gatto-216877252/" class="icon-link">
+            <svg class="icon linkedin" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none">
+              <path fill="#0A66C2"
+                d="M12.225 12.225h-1.778V9.44c0-.664-.012-1.519-.925-1.519-.926 0-1.068.724-1.068 1.47v2.834H6.676V6.498h1.707v.783h.024c.348-.594.996-.95 1.684-.925 1.802 0 2.135 1.185 2.135 2.728l-.001 3.14zM4.67 5.715a1.037 1.037 0 01-1.032-1.031c0-.566.466-1.032 1.032-1.032.566 0 1.031.466 1.032 1.032 0 .566-.466 1.032-1.032 1.032zm.889 6.51h-1.78V6.498h1.78v5.727zM13.11 2H2.885A.88.88 0 002 2.866v10.268a.88.88 0 00.885.866h10.226a.882.882 0 00.889-.866V2.865a.88.88 0 00-.889-.864z" />
+            </svg>
+            <span>LinkedIn</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/saso-gatto" class="icon-link">
+            <svg class="icon github" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M4.0744 2.9938C4.13263 1.96371 4.37869 1.51577 5.08432 1.15606C5.84357 0.768899 7.04106 0.949072 8.45014 1.66261C9.05706 1.97009 9.11886 1.97635 10.1825 1.83998C11.5963 1.65865 13.4164 1.65929 14.7213 1.84164C15.7081 1.97954 15.7729 1.97265 16.3813 1.66453C18.3814 0.651679 19.9605 0.71795 20.5323 1.8387C20.8177 2.39812 20.8707 3.84971 20.6494 5.04695C20.5267 5.71069 20.5397 5.79356 20.8353 6.22912C22.915 9.29385 21.4165 14.2616 17.8528 16.1155C17.5801 16.2574 17.3503 16.3452 17.163 16.4167C16.5879 16.6363 16.4133 16.703 16.6247 17.7138C16.7265 18.2 16.8491 19.4088 16.8973 20.4002C16.9844 22.1922 16.9831 22.2047 16.6688 22.5703C16.241 23.0676 15.6244 23.076 15.2066 22.5902C14.9341 22.2734 14.9075 22.1238 14.9075 20.9015C14.9075 19.0952 14.7095 17.8946 14.2417 16.8658C13.6854 15.6415 14.0978 15.185 15.37 14.9114C17.1383 14.531 18.5194 13.4397 19.2892 11.8146C20.0211 10.2698 20.1314 8.13501 18.8082 6.83668C18.4319 6.3895 18.4057 5.98446 18.6744 4.76309C18.7748 4.3066 18.859 3.71768 18.8615 3.45425C18.8653 3.03823 18.8274 2.97541 18.5719 2.97541C18.4102 2.97541 17.7924 3.21062 17.1992 3.49805L16.2524 3.95695C16.1663 3.99866 16.07 4.0147 15.975 4.0038C13.5675 3.72746 11.2799 3.72319 8.86062 4.00488C8.76526 4.01598 8.66853 3.99994 8.58215 3.95802L7.63585 3.49882C7.04259 3.21087 6.42482 2.97541 6.26317 2.97541C5.88941 2.97541 5.88379 3.25135 6.22447 4.89078C6.43258 5.89203 6.57262 6.11513 5.97101 6.91572C5.06925 8.11576 4.844 9.60592 5.32757 11.1716C5.93704 13.1446 7.4295 14.4775 9.52773 14.9222C10.7926 15.1903 11.1232 15.5401 10.6402 16.9905C10.26 18.1319 10.0196 18.4261 9.46707 18.4261C8.72365 18.4261 8.25796 17.7821 8.51424 17.1082C8.62712 16.8112 8.59354 16.7795 7.89711 16.5255C5.77117 15.7504 4.14514 14.0131 3.40172 11.7223C2.82711 9.95184 3.07994 7.64739 4.00175 6.25453C4.31561 5.78028 4.32047 5.74006 4.174 4.83217C4.09113 4.31822 4.04631 3.49103 4.0744 2.9938Z"
+                fill="#0F0F0F" />
+              <path
+                d="M3.33203 15.9454C3.02568 15.4859 2.40481 15.3617 1.94528 15.6681C1.48576 15.9744 1.36158 16.5953 1.66793 17.0548C1.8941 17.3941 2.16467 17.6728 2.39444 17.9025C2.4368 17.9449 2.47796 17.9858 2.51815 18.0257C2.71062 18.2169 2.88056 18.3857 3.05124 18.5861C3.42875 19.0292 3.80536 19.626 4.0194 20.6962C4.11474 21.1729 4.45739 21.4297 4.64725 21.5419C4.85315 21.6635 5.07812 21.7352 5.26325 21.7819C5.64196 21.8774 6.10169 21.927 6.53799 21.9559C7.01695 21.9877 7.53592 21.998 7.99999 22.0008C8.00033 22.5527 8.44791 23.0001 8.99998 23.0001C9.55227 23.0001 9.99998 22.5524 9.99998 22.0001V21.0001C9.99998 20.4478 9.55227 20.0001 8.99998 20.0001C8.90571 20.0001 8.80372 20.0004 8.69569 20.0008C8.10883 20.0026 7.34388 20.0049 6.67018 19.9603C6.34531 19.9388 6.07825 19.9083 5.88241 19.871C5.58083 18.6871 5.09362 17.8994 4.57373 17.2891C4.34391 17.0194 4.10593 16.7834 3.91236 16.5914C3.87612 16.5555 3.84144 16.5211 3.80865 16.4883C3.5853 16.265 3.4392 16.1062 3.33203 15.9454Z"
+                fill="#0F0F0F" />
+            </svg>
+            <span>GitHub</span>
+          </a>
+        </li>
+         <li>
+          <a href="https://orcid.org/0009-0006-2533-0139" class="icon-link">
+            <svg class="icon orcid" mlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" aria-hidden="true"
+              focusable="false">
+              <path fill="#A6CE39"
+                d="M256,128c0,70.7-57.3,128-128,128C57.3,256,0,198.7,0,128C0,57.3,57.3,0,128,0C198.7,0,256,57.3,256,128z" />
+              <g fill="#FFFFFF">
+                <path d="M86.3,186.2H70.9V79.1h15.4v48.4V186.2z" />
+                <path
+                  d="M108.9,79.1h41.6c39.6,0,57,28.3,57,53.6c0,27.5-21.5,53.6-56.8,53.6h-41.8V79.1z M124.3,172.4h24.5c34.9,0,42.9-26.5,42.9-39.7c0-21.5-13.7-39.7-43.7-39.7h-23.7V172.4z" />
+                <path
+                  d="M88.7,56.8c0,5.5-4.5,10.1-10.1,10.1c-5.6,0-10.1-4.6-10.1-10.1c0-5.6,4.5-10.1,10.1-10.1C84.2,46.7,88.7,51.3,88.7,56.8z" />
+              </g>
+            </svg>
+            <span>ORCID</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.scopus.com/authid/detail.uri?authorId=59294184200">
+            <svg class="icon scopus" xmlns:dc="http://purl.org/dc/elements/1.1/"  xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"              xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"  xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"  viewBox="0 0 68 68" version="1.1" id="svg916" inkscape:version="1.0 (4035a4f, 2020-05-01)"             sodipodi:docname="scopus.svg">
+              <defs id="defs910" />
+              <g transform="translate(-128,-60)" inkscape:label="Layer 1" inkscape:groupmode="layer"
+                id="layer1">
+                <rect style="opacity:0.999;fill:#e9711c;fill-opacity:1;stroke-width:0.399999;stroke-linecap:square"
+                  id="rect1609" width="67.73333" height="67.73333" x="131.72469" y="63.613396" />
+                <g transform="matrix(8.0000004,0,0,8.0000004,-922.07286,-445.2938)"
+                  style="font-style:normal;font-weight:normal;font-size:5.69722px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.14243"
+                  id="text874" aria-label="Scopus">
+                  <path id="path2345"
+                    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:NexusSans;-inkscape-font-specification:NexusSans;fill:#ffffff;stroke-width:0.14243"
+                    d="m 135.36567,68.642465 c 0,-0.541236 -0.47857,-0.786216 -0.94004,-1.059683 -0.35893,-0.216494 -0.74064,-0.364622 -0.74064,-0.763427 0,-0.296256 0.21649,-0.620997 0.64378,-0.620997 0.37032,0 0.6267,0.05697 0.95144,0.250678 l 0.0285,-0.450081 c -0.30196,-0.125339 -0.51845,-0.182311 -1.00841,-0.182311 -0.70076,0 -1.12805,0.455778 -1.12805,1.036894 0,0.581117 0.51275,0.831794 0.97992,1.116655 0.34753,0.210797 0.71215,0.353228 0.71215,0.729244 0,0.364622 -0.32474,0.626695 -0.71215,0.626695 -0.38171,0 -0.63239,-0.08546 -0.92295,-0.262073 l -0.0684,0.450081 c 0.29626,0.136733 0.59821,0.199403 1.01411,0.199403 0.58112,0 1.19072,-0.358925 1.19072,-1.071078 z" />
+                  <path id="path2347"
+                    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:NexusSans;-inkscape-font-specification:NexusSans;fill:#ffffff;stroke-width:0.14243"
+                    d="m 139.01082,69.485654 -0.0342,-0.432989 c -0.34753,0.188008 -0.71785,0.262072 -1.08817,0.262072 -0.80901,0 -1.45279,-0.677969 -1.45279,-1.57813 0,-0.951435 0.63239,-1.538249 1.37303,-1.538249 0.46717,0 0.82609,0.07406 1.16793,0.262072 l 0.0342,-0.427292 c -0.31335,-0.148127 -0.56972,-0.216494 -1.14514,-0.216494 -1.10526,0 -1.94275,0.86028 -1.94275,1.954147 0,1.247691 0.99701,1.931357 1.92566,1.931357 0.46717,0 0.85458,-0.06267 1.16223,-0.216494 z" />
+                </g>
+              </g>
+            </svg>
+            <span> Scopus</span>
+          </a>
+        </li>
+        <li>
+          📄 <a href="assets/Salvatore-Gatto-CV-2026.pdf">CV</a>
+        </li>
       </ul>
-    </div>
+    </aside>
+
+    <section class="main-content" aria-labelledby="intro-heading">
+      <h2 id="intro-heading">Salvatore Gatto</h2>
+
+      <p>
+        Welcome to my academic portfolio website. I am an Accessibility Researcher
+        and PhD Candidate in Brain, Mind and Computer Science at the University of
+        Padua. My work focuses on accessibility by design, accessible web and
+        mobile systems, assistive technologies, and inclusive digital experiences.
+      </p>
+
+      <p>
+        My current research investigates how accessibility can be integrated into
+        software development workflows and digital content production, with
+        particular interest in WCAG 2.2, accessibility auditing, LLM-assisted
+        accessibility tools, and multisensory access to STEM content.
+      </p>
+
+      <section class="work-links" aria-labelledby="work-heading">
+        <h2 id="work-heading">Explore My Work</h2>
+
+        <p>Browse through my academic activities and contributions:</p>
+
+        <ul>
+          <li>
+            <a href="publications.html">Publications</a>
+            <span>— Research papers and academic publications</span>
+          </li>
+          <li>
+            <a href="research.html">Research</a>
+            <span>— Research interests, projects, and current work</span>
+          </li>
+          <li>
+            <a href="projects.html">Projects</a>
+            <span>— Accessibility tools and prototypes</span>
+          </li>
+          <li>
+            <a href="teaching.html">Teaching</a>
+            <span>— Teaching experience and materials</span>
+          </li>
+        </ul>
+      </section>
+    </section>
   </main>
 </body>
+
 </html>
- 
